@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div> 
+        <div>
+          <div class="song-name"> </div>
+        </div>
+        <div class="wraper-time">
+            <div class="time-song">0:00</div>
+            <div class="time-long">0:00</div>
+        </div>
+        <input class="range rangeall" type="range" min="0" max="100" value="50">
+        <div class="wrapper-mute">
+          <div class="mute"></div>
+          <input class="range-volume rangeall" type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+      <ul class="play-list">
+
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]" />
+    </div>
+
+
+
+  </main>
+  <footer class="footer">
+    <div class="quote-wrapper">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+
+        <div class="open-todo close-todo"></div>
+
+      <div class="todo">
+            <div class="popup-header-wrapper">
+                <h3 class="todo-header">My tasks</h3> 
+                    <div class="close-todo">
+                      <div class="cl-btn-3">
+                        <span class="top"></span>
+                        <span class="bot"></span>
+                      </div>
+                    </div>
+            </div>
+            
+            <ul class="ul">
+            </ul>
+
+            <input type="text" class="imput-backgroundtags imput-backgroundtags-flex imput-todo" 
+            name="backgroundtags" id="backgroundtags" placeholder="New task">   
+      </div>
+
+       <div class="open-popup close-popup"></div>
+      <div class="popup">
+        <div class="popup-header-wrapper">
+          <h3 class="popup-header">Configuration</h3> 
+          <div class="close-popup">
+            <div class="cl-btn-3">
+              <span class="top"></span>
+              <span class="bot"></span>
+            </div>
+          </div>
+        </div>
+        <form class="form-input form-input-language">
+            <p class="form-input-name language">Language</p>
+            <input type="radio" class="imput imput-checked imput-english" id="languageenglish"
+             name="language" value="english">
+            <label for="languageenglish" class="imput-label english">English</label>
+
+            <input type="radio" class="imput imput-checked imput-russian" id="languagerussian"
+             name="language" value="russian">
+            <label for="languagerussian" class="imput-label russian">Russian</label>
+        </form>
+        <form class="form-input form-input-backgroundtags-sourse">
+          <p class="form-input-name background-sourse">Background sourse</p>
+          <input type="radio" class="imput imput-checked imput-github" id="github"
+           name="backgroundsourse" value="github">
+          <label for="github" class="imput-label">Github</label>
+
+          <input type="radio" class="imput imput-checked imput-unsplash" id="unsplash"
+           name="backgroundsourse" value="unsplash">
+          <label for="unsplash" class="imput-label">Unsplash</label>
+          
+          <input type="radio" class="imput imput-checked imput-flickr" id="flickr"
+           name="backgroundsourse" value="flickr">
+          <label for="flickr" class="imput-label">Flickr</label>
+      </form>
+      <form class="form-input form-input-backgroundtags">
+        <p class="form-input-name background-tags">Background tags</p>
+        <input type="text" class="imput-backgroundtags" 
+         name="backgroundtags" id="backgroundtags" placeholder="gray sky">
+        <!-- <label for="backgroundtags" class="imput-label">Github</label> -->
+      </form>
+      <form class="form-input">
+        <p class="form-input-name show-widgets">Show widgets</p>
+        <div class="show-widgets-checkbox-wrapper">
+
+        <input type="checkbox" class="imput imput-time imput-nonchecked" id="time"
+         name="showwidgets" value="github" >
+        <label for="time" class="imput-label timelabel">Time</label>
+
+        <input type="checkbox" class="imput imput-date imput-nonchecked" id="date"
+         name="showwidgets" value="date" >
+        <label for="date" class="imput-label datelabel">Date</label>
+                
+        <input type="checkbox" class="imput imput-quote imput-nonchecked" id="quote"
+        name="showwidgets" value="quote" >
+        <label for="quote" class="imput-label quotelabel">Quote</label>
+        
+        <input type="checkbox" class="imput imput-weather imput-nonchecked" id="weather"
+        name="showwidgets" value="weather" >
+        <label for="weather" class="imput-label  weatherlabel">Weather</label>
+        
+        <input type="checkbox" class="imput imput-player imput-nonchecked" id="player"
+        name="showwidgets" value="player">
+        <label for="player" class="imput-label playerlabel">Player</label>
+              
+        <input type="checkbox" class="imput imput-to-do imput-nonchecked" id="todolist"
+        name="showwidgets" value="todolist" >
+        <label for="todolist" class="imput-label todolistlabel">To do List</label>
+        
+        <input type="checkbox" class="imput imput-greeting imput-nonchecked" id="greeting"
+         name="showwidgets" value="greeting" >
+        <label for="greeting" class="imput-label greetinglabel">Greeting</label>
+        </div>
+       </form>
+
+      </div> 
+
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
